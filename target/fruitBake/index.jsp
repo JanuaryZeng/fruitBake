@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: January
-  Date: 2019/8/19
-  Time: 17:47
+  Date: 2019/8/20
+  Time: 15:34
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -39,7 +39,7 @@
             <li class="hidden-xs am-hide-sm-only">
                 <form role="search" class="app-search">
                     <input type="text" placeholder="Search..." class="form-control">
-                    <a href=""><img src="assets/img/search.png"></a>
+                    <a href=""><img src="img/search.png"></a>
                 </form>
             </li>
         </ul>
@@ -60,7 +60,7 @@
             <!-- User -->
             <div class="user-box am-hide-sm-only">
                 <div class="user-img">
-                    <img src="assets/img/avatar-1.jpg" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
+                    <img src="img/avatar-1.jpg" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
                     <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
                 </div>
                 <h5><a href="#">Mat Helme</a> </h5>
@@ -218,7 +218,7 @@
                 <div class="am-u-md-3">
                     <div class="card-box widget-user">
                         <div>
-                            <img src="assets/img/avatar-3.jpg" class="img-responsive img-circle" alt="user">
+                            <img src="img/avatar-3.jpg" class="img-responsive img-circle" alt="user">
                             <div class="wid-u-info">
                                 <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
                                 <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
@@ -231,7 +231,7 @@
                 <div class="am-u-md-3">
                     <div class="card-box widget-user">
                         <div>
-                            <img src="assets/img/avatar-2.jpg" class="img-responsive img-circle" alt="user">
+                            <img src="img/avatar-2.jpg" class="img-responsive img-circle" alt="user">
                             <div class="wid-u-info">
                                 <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
                                 <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
@@ -244,7 +244,7 @@
                 <div class="am-u-md-3">
                     <div class="card-box widget-user">
                         <div>
-                            <img src="assets/img/avatar-4.jpg" class="img-responsive img-circle" alt="user">
+                            <img src="img/avatar-4.jpg" class="img-responsive img-circle" alt="user">
                             <div class="wid-u-info">
                                 <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
                                 <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
@@ -257,7 +257,7 @@
                 <div class="am-u-md-3">
                     <div class="card-box widget-user">
                         <div>
-                            <img src="assets/img/avatar-10.jpg" class="img-responsive img-circle" alt="user">
+                            <img src="img/avatar-10.jpg" class="img-responsive img-circle" alt="user">
                             <div class="wid-u-info">
                                 <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
                                 <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
@@ -280,7 +280,7 @@
                         <div class="inbox-widget nicescroll" style="height: 315px; overflow: hidden; outline: none;" tabindex="5000">
                             <a href="#">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/img/avatar-1.jpg" class="img-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="img/avatar-1.jpg" class="img-circle" alt=""></div>
                                     <p class="inbox-item-author">Chadengle</p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                     <p class="inbox-item-date">13:40 PM</p>
@@ -288,7 +288,7 @@
                             </a>
                             <a href="#">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/img/avatar-2.jpg" class="img-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="img/avatar-2.jpg" class="img-circle" alt=""></div>
                                     <p class="inbox-item-author">Shahedk</p>
                                     <p class="inbox-item-text">Hey! there I'm available...</p>
                                     <p class="inbox-item-date">10:15 AM</p>
@@ -296,7 +296,7 @@
                             </a>
                             <a href="#">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/img/avatar-10.jpg" class="img-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="img/avatar-10.jpg" class="img-circle" alt=""></div>
                                     <p class="inbox-item-author">Tomaslau</p>
                                     <p class="inbox-item-text">I've finished it! See you so...</p>
                                     <p class="inbox-item-date">13:34 PM</p>
@@ -304,7 +304,7 @@
                             </a>
                             <a href="#">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/img/avatar-4.jpg" class="img-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="img/avatar-4.jpg" class="img-circle" alt=""></div>
                                     <p class="inbox-item-author">Stillnotdavid</p>
                                     <p class="inbox-item-text">This theme is awesome!</p>
                                     <p class="inbox-item-date">13:17 PM</p>
@@ -312,7 +312,7 @@
                             </a>
                             <a href="#">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/img/avatar-5.jpg" class="img-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="img/avatar-5.jpg" class="img-circle" alt=""></div>
                                     <p class="inbox-item-author">Kurafire</p>
                                     <p class="inbox-item-text">Nice to meet you</p>
                                     <p class="inbox-item-date">12:20 PM</p>
