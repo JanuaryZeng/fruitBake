@@ -16,7 +16,6 @@ import java.util.List;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration("src/resources")
 @ContextConfiguration(locations={"classpath:applicationContext.xml","classpath:springmvc.xml"})
-
 public class UsersTest {
 
     @Autowired

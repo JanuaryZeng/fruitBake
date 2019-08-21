@@ -18,16 +18,18 @@
 
     <!-- 视图解析器对象 -->
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="prefix" value="/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
 
+
+
     <!-- 设置静态资源不过滤 -->
     <mvc:resources location="/css/" mapping="/css/**" />
-    <mvc:resources location="/images/" mapping="/images/**" />
+    <mvc:resources location="/img/" mapping="/img/**" />
     <mvc:resources location="/js/" mapping="/js/**" />
-
+    <mvc:resources location="/fonts/" mapping="/fonts/**" />
     <!-- 开启SpringMVC框架注解的支持 -->
     <mvc:annotation-driven/>
 
