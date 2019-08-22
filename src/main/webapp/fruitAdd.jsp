@@ -9,7 +9,28 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <jsp:include page="top.jsp"/>
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-topbar-left am-hide-sm-only">
+        <a href="index.jsp" class="logo"><span>水果<span>烘焙坊</span></span><i class="zmdi zmdi-layers"></i></a>
+    </div>
 
+    <div class="contain">
+        <ul class="am-nav am-navbar-nav am-navbar-left">
+
+            <li><h4 class="page-title">水果表单</h4></li>
+        </ul>
+
+        <ul class="am-nav am-navbar-nav am-navbar-right">
+            <li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
+            <li class="hidden-xs am-hide-sm-only">
+                <form role="search" class="app-search">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <a href=""><img src="../img/search.png"></a>
+                </form>
+            </li>
+        </ul>
+    </div>
+</header>
 <div class="content-page">
     <!-- Start content -->
     <div class="content">
@@ -19,7 +40,7 @@
                 <div class="card-box">
                     <form:form action="add" class="am-form" modelAttribute="fruitAdd">
                         <fieldset>
-                            <legend> 表单验证</legend>
+                            <legend> 添加水果表单</legend>
                             <div class="am-form-group">
                                 <label for="fname">水果名：</label>
                                 <form:input path="fname" placeholder="不能为空"/>
@@ -28,6 +49,10 @@
                             <div class="am-form-group">
                                 <label for="mean">控制流程：</label>
                                 <form:input path="mean" placeholder="不能为空" />
+                            </div>
+                            <div class="am-form-group">
+                                <label for="mean">头像地址：</label>
+                                <form:input path="ficon" placeholder="不能为空" />
                             </div>
                             <button class="am-btn am-btn-secondary" type="submit">提交</button>
                             <button class="am-btn am-btn-secondary" type="button" onclick="javascript:window.history.go(-1);"> 返回 </button>

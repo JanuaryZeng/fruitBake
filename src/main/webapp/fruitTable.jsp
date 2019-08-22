@@ -9,6 +9,28 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="top.jsp"/>
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-topbar-left am-hide-sm-only">
+        <a href="index.jsp" class="logo"><span>水果<span>烘焙坊</span></span><i class="zmdi zmdi-layers"></i></a>
+    </div>
+
+    <div class="contain">
+        <ul class="am-nav am-navbar-nav am-navbar-left">
+
+            <li><h4 class="page-title">水果表单</h4></li>
+        </ul>
+
+        <ul class="am-nav am-navbar-nav am-navbar-right">
+            <li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
+            <li class="hidden-xs am-hide-sm-only">
+                <form role="search" class="app-search">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <a href=""><img src="../img/search.png"></a>
+                </form>
+            </li>
+        </ul>
+    </div>
+</header>
     <div class="content-page">
         <br>
         <br>
@@ -27,10 +49,12 @@
 
                     <div class="am-u-sm-12 am-u-md-3">
                         <div class="am-input-group am-input-group-sm">
-                            <input type="text" class="am-form-field" id="SearchID">
+                            <form action="findOne" >
+                            <input type="text" class="am-form-field" name="Fname">
                             <span class="am-input-group-btn">
-				            <a href="findOne?Fname=${SearchID}" class="am-btn am-btn-default" type="button">搜索</a>
-				          </span>
+				            <button type="submit" class="am-btn am-btn-default">搜索</button>
+				            </span>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -43,7 +67,7 @@
                             <table class="am-table am-table-striped am-table-hover table-main">
                                 <thead>
                                 <tr>
-                                    <th class="table-id">水果</th><th class="table-title">控制流程</th><th class="table-set">操作</th>
+                                    <th class="table-id">水果</th><th class="table-title">控制流程</th><th class="table-set">头像地址</th><th class="table-set">操作</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -51,10 +75,11 @@
                                 <tr>
                                     <td>${dept.fname}</td>
                                     <td>${dept.mean}</td>
+                                    <td>${dept.ficon}</td>
                                     <td>
                                         <div class="am-btn-toolbar">
                                             <div class="am-btn-group am-btn-group-xs">
-                                                <button class="am-btn am-btn-default am-btn-xs am-text-secondary" ><span class="am-icon-pencil-square-o"></span> 编辑</button>
+                                                <a class="am-btn am-btn-default am-btn-xs am-text-secondary" href="to_update?Fname=${dept.fname}"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                                                 <a class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" href="delete?Fname=${dept.fname}"><span class="am-icon-trash-o"></span>删除</a>
                                             </div>
                                         </div>
@@ -63,20 +88,6 @@
                                 </c:forEach>
                                 </tbody>
                             </table>
-                            <div class="am-cf">
-                                共 15 条记录
-                                <div class="am-fr">
-                                    <ul class="am-pagination">
-                                        <li class="am-disabled"><a href="#">«</a></li>
-                                        <li class="am-active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">»</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                             <hr />
                         </form>
                     </div>

@@ -33,4 +33,9 @@ public class FruitsServiceImpl implements FruitsService {
     public void insert(Fruits fruits) {
         fruitsDao.insert(fruits);
     }
+
+    @Override
+    public void update(Fruits fruits) {
+        fruitsDao.update(fruits);
+    }
 }

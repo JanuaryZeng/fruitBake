@@ -4,6 +4,7 @@ import com.fruitBake.domain.Fruits;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -20,6 +21,9 @@ public interface FruitsDao {
     @Delete("delete from fruits where Fname = #{Fname}")
     public void delete(String Fname);
 
-    @Insert("insert into fruits values(#{Fname},#{mean})")
+    @Insert("insert into fruits values(#{Fname},#{mean},#{Ficon})")
     public void insert(Fruits fruits);
+
+    @Update("update fruits set mean = #{mean} Ficon = #{Ficon} where Fname = #{Fname}")
+    public void update(Fruits fruits);
 }

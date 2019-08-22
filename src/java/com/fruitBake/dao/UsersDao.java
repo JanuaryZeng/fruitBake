@@ -14,15 +14,12 @@ public interface UsersDao {
     public List<Users> findAll();
 
     @Insert("insert into Users (Uname,Upassword,ovenCount) " +
-            "values(#{Uname},#{Upassword},#{ovenCount})")
+            "values(#{Uname},#{Upassword},#{ovenCount},#{Ucontext},#{phone})")
     public void save(Users users);
 
     @Delete("delete from users where Uname = #{Uname}")
     public void delete(String Uname);
 
-    @Update("update users\n" +
-            "set Upassword = #{Upassword}\n" +
-            "where Uname = #{Uname}")
-    public void updatePSW(@Param("Uname")String Uname,@Param("Upassword") String Upassword);
-
+    @Select("select * from Users where Uname = #{Uname}")
+    public Users login(String Uname);
 }

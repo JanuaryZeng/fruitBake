@@ -27,9 +27,11 @@ public class FruitsController {
     @RequestMapping("/findOne")
     public String findOne(String Fname, Map<String, Object> map){
 
-        map.put("fruit",fruitsService.findOne(Fname));
-
-        return "redirect:findAll";
+        if(Fname.equals(""))
+            map.put("fruits",fruitsService.findAll());
+        else
+            map.put("fruits",fruitsService.findOne(Fname));
+        return "fruitTable";
     }
 
     @RequestMapping("/delete")
@@ -49,6 +51,19 @@ public class FruitsController {
         fruitsService.insert(fruitAdd);
         return "redirect:findAll";
     }
+
+    @RequestMapping(value = "to_update",params = "Fname")
+    public String toUpdate(String Fname, Map<String,Object> map){
+        map.put("toUpdate",fruitsService.findOne(Fname).get(0));
+        return "fruitUpdate";
+    }
+
+    @RequestMapping(value = "update")
+    public String toUpdate(Fruits toUpdate){
+        fruitsService.update(toUpdate);
+        return "redirect:findAll";
+    }
+
 
 
 }

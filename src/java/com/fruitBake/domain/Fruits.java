@@ -6,6 +6,7 @@ public class Fruits implements Serializable {
 
     private String Fname;
     private String mean;
+    private String Ficon;
 
     public String getFname() {
         return Fname;
@@ -23,11 +24,21 @@ public class Fruits implements Serializable {
         this.mean = mean;
     }
 
+    public String getFicon() {
+        return Ficon;
+    }
+
+    public void setFicon(String ficon) {
+        Ficon = ficon;
+    }
+
+
     @Override
     public String toString() {
         return "Fruits{" +
                 "Fname='" + Fname + '\'' +
                 ", mean='" + mean + '\'' +
+                ", Ficon='" + Ficon + '\'' +
                 '}';
     }
 }

@@ -7,6 +7,8 @@ public class Users implements Serializable {
     private String Uname;
     private String Upassword;
     private Integer ovenCount;
+    private String Ucontext;
+    private String phone;
 
     public Users() {
     }
@@ -28,7 +30,17 @@ public class Users implements Serializable {
                 "Uname='" + Uname + '\'' +
                 ", Upassword='" + Upassword + '\'' +
                 ", ovenCount=" + ovenCount +
+                ", Ucontext='" + Ucontext + '\'' +
+                ", phone='" + phone + '\'' +
                 '}';
+    }
+
+    public Users(String uname, String upassword, Integer ovenCount, String ucontext, String phone) {
+        Uname = uname;
+        Upassword = upassword;
+        this.ovenCount = ovenCount;
+        Ucontext = ucontext;
+        this.phone = phone;
     }
 
     public String getUname() {
@@ -53,5 +65,21 @@ public class Users implements Serializable {
 
     public void setOvenCount(Integer ovenCount) {
         this.ovenCount = ovenCount;
+    }
+
+    public String getUcontext() {
+        return Ucontext;
+    }
+
+    public void setUcontext(String ucontext) {
+        Ucontext = ucontext;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

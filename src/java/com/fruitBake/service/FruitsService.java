@@ -13,4 +13,6 @@ public interface FruitsService {
 
     public void insert(Fruits fruits);
 
+    public void update(Fruits fruits);
+
 }

@@ -25,13 +25,8 @@ public class UsersTest {
     private UsersService usersService;
 
     @Test
-    public void usersD(){
-        usersDao.updatePSW("jan","123456");
-    }
-
-    @Test
     public void usersSer(){
-        usersService.findAll();
+        System.out.println(usersDao.login("jan"));
     }
 
     @Test

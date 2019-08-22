@@ -27,28 +27,7 @@
 </head>
 <body>
 <!-- Begin page -->
-<header class="am-topbar am-topbar-fixed-top">
-    <div class="am-topbar-left am-hide-sm-only">
-        <a href="index.jsp" class="logo"><span>水果<span>烘焙坊</span></span><i class="zmdi zmdi-layers"></i></a>
-    </div>
 
-    <div class="contain">
-        <ul class="am-nav am-navbar-nav am-navbar-left">
-
-            <li><h4 class="page-title">水果表单</h4></li>
-        </ul>
-
-        <ul class="am-nav am-navbar-nav am-navbar-right">
-            <li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
-            <li class="hidden-xs am-hide-sm-only">
-                <form role="search" class="app-search">
-                    <input type="text" placeholder="Search..." class="form-control">
-                    <a href=""><img src="../img/search.png"></a>
-                </form>
-            </li>
-        </ul>
-    </div>
-</header>
 <!-- end page -->
 
 
@@ -90,9 +69,9 @@
                 <li class="admin-parent">
                     <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                     <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-                        <li><a href="fruits/findAll" class="am-cf"> 水果表单</a></li>
-                        <li><a href="fruitTable.jsp" class="am-cf"> 烤箱表单</a></li>
-                        <li><a href="fruitTable.jsp" class="am-cf"> 烤制记录</a></li>
+                        <li><a href="/fruitBake_war_exploded/fruits/findAll" class="am-cf"> 水果表单</a></li>
+                        <li><a href="/fruitBake_war_exploded/ovens/findAll" class="am-cf"> 烤箱表单</a></li>
+                        <li><a href="/fruitBake_war_exploded/notes/findAll" class="am-cf"> 烤制记录</a></li>
                     </ul>
                 </li>
                 <li class="admin-parent">

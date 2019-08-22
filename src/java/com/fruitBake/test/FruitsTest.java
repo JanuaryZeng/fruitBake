@@ -31,7 +31,7 @@ public class FruitsTest {
 
     @Test
     public void DaoDelete(){
-        fruitsDao.delete("123");
+        fruitsDao.delete("21qwe3");
     }
 
     @Test
@@ -39,6 +39,7 @@ public class FruitsTest {
         Fruits fruits = new Fruits();
         fruits.setFname("21qwe3");
         fruits.setMean("1564");
+        fruits.setFicon("123");
         fruitsDao.insert(fruits);
     }
 

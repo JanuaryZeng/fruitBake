@@ -13,7 +13,6 @@ public interface UsersService {
 
     public void delete(String Uname);
 
-    public void updatePSW(@Param("Uname")String Uname, @Param("Upassword") String Upassword);
-
+    public Users login(String Uname);
 
 }

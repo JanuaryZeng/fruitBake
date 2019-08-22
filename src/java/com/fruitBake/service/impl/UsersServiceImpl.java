@@ -32,8 +32,8 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
-    public void updatePSW(String Uname, String Upassword) {
-        usersDao.updatePSW(Uname, Upassword);
+    public Users login(String Uname) {
+        return usersDao.login(Uname);
     }
 
 }
