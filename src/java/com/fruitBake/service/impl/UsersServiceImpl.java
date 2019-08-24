@@ -16,13 +16,11 @@ public class UsersServiceImpl implements UsersService {
 
     @Override
     public List<Users> findAll() {
-        System.out.println("业务层：查询所有账户。。");
         return usersDao.findAll();
     }
 
     @Override
     public void save(Users users) {
-        System.out.println("业务层：插入用户。。");
         usersDao.save(users);
     }
 
@@ -32,8 +30,29 @@ public class UsersServiceImpl implements UsersService {
     }
 
     @Override
-    public Users login(String Uname) {
-        return usersDao.login(Uname);
+    public Users login(String Uname, String Upassword) {
+        return usersDao.login(Uname, Upassword);
     }
+
+    @Override
+    public void register(Users users) {
+        usersDao.register(users);
+    }
+
+    @Override
+    public void alterPassword(String Uname, String Upassword) {
+        usersDao.alterPassword(Uname, Upassword);
+    }
+
+    @Override
+    public void update(Users users) {
+        usersDao.update(users);
+    }
+
+    @Override
+    public List<Users> findOne(String Uname) {
+        return usersDao.findOne(Uname);
+    }
+
 
 }

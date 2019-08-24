@@ -43,17 +43,16 @@
                             <legend> 添加烤箱表单</legend>
 
                             <div class="am-form-group">
-                                <label for="id">ID：</label>
-                                <form:input path="id" placeholder="不能为空" />
-                            </div>
-
-                            <div class="am-form-group">
                                 <label for="oname">烤箱名：</label>
                                 <form:input path="oname" placeholder="不能为空" />
                             </div>
                             <div class="am-form-group">
                                 <label for="ostatus">当前状态：</label>
                                 <form:input path="ostatus" placeholder="不能为空" />
+                            </div>
+                            <div class="am-form-group">
+                                <label for="oname">烤箱地址：</label>
+                                <form:input path="IP" placeholder="不能为空" />
                             </div>
                             <button class="am-btn am-btn-secondary" type="submit">提交</button>
                             <button class="am-btn am-btn-secondary" type="button" onclick="javascript:window.history.go(-1);"> 返回 </button>

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service("fruitsService")
 public class FruitsServiceImpl implements FruitsService {
@@ -38,4 +39,10 @@ public class FruitsServiceImpl implements FruitsService {
     public void update(Fruits fruits) {
         fruitsDao.update(fruits);
     }
+
+    @Override
+    public String findMean(String Fname) {
+        return fruitsDao.findMean(Fname);
+    }
+
 }

@@ -26,4 +26,7 @@ public interface FruitsDao {
 
     @Update("update fruits set mean = #{mean} Ficon = #{Ficon} where Fname = #{Fname}")
     public void update(Fruits fruits);
+
+    @Select("select mean from fruits where Fname = #{Fname}")
+    public String findMean(String Fname);
 }

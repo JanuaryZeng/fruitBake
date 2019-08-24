@@ -33,7 +33,7 @@ public class OvensTest {
 
     @Test
     public void delete(){
-        ovensService.delete("4");
+        ovensService.delete("1");
     }
 
     @Test
@@ -44,4 +44,10 @@ public class OvensTest {
         ovens.setOstatus("1");
         ovensService.update(ovens);
     }
+
+    @Test
+    public void findOne(){
+        ovensService.findOne("美的01");
+    }
+
 }

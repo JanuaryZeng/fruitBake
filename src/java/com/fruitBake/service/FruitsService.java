@@ -15,4 +15,7 @@ public interface FruitsService {
 
     public void update(Fruits fruits);
 
+    public String findMean(String Fname);
+
+
 }

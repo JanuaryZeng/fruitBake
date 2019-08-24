@@ -6,7 +6,7 @@ public class Users implements Serializable {
 
     private String Uname;
     private String Upassword;
-    private Integer ovenCount;
+    private String Uicon;
     private String Ucontext;
     private String phone;
 
@@ -18,10 +18,10 @@ public class Users implements Serializable {
         Upassword = upassword;
     }
 
-    public Users(String uname, String upassword, Integer ovenCount) {
+    public Users(String uname, String upassword, String Uicon) {
         Uname = uname;
         Upassword = upassword;
-        this.ovenCount = ovenCount;
+        this.Uicon = Uicon;
     }
 
     @Override
@@ -29,16 +29,24 @@ public class Users implements Serializable {
         return "Users{" +
                 "Uname='" + Uname + '\'' +
                 ", Upassword='" + Upassword + '\'' +
-                ", ovenCount=" + ovenCount +
+                ", ovenCount=" + Uicon +
                 ", Ucontext='" + Ucontext + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
     }
 
-    public Users(String uname, String upassword, Integer ovenCount, String ucontext, String phone) {
+    public String getUicon() {
+        return Uicon;
+    }
+
+    public void setUicon(String uicon) {
+        Uicon = uicon;
+    }
+
+    public Users(String uname, String upassword, String Uicon, String ucontext, String phone) {
         Uname = uname;
         Upassword = upassword;
-        this.ovenCount = ovenCount;
+        this.Uicon = Uicon;
         Ucontext = ucontext;
         this.phone = phone;
     }
@@ -59,12 +67,12 @@ public class Users implements Serializable {
         Upassword = upassword;
     }
 
-    public Integer getOvenCount() {
-        return ovenCount;
+    public String getOvenCount() {
+        return Uicon;
     }
 
-    public void setOvenCount(Integer ovenCount) {
-        this.ovenCount = ovenCount;
+    public void setOvenCount(String Uicon) {
+        this.Uicon = Uicon;
     }
 
     public String getUcontext() {

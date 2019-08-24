@@ -26,8 +26,8 @@ public class OvensServiceImpl implements OvensService {
     }
 
     @Override
-    public void delete(String id) {
-        ovensDao.delete(id);
+    public void delete(String Oname) {
+        ovensDao.delete(Oname);
     }
 
     @Override
@@ -36,7 +36,17 @@ public class OvensServiceImpl implements OvensService {
     }
 
     @Override
-    public List<Ovens> findOne(String id) {
-        return ovensDao.findOne(id);
+    public List<Ovens> findOne(String Oname) {
+        return ovensDao.findOne(Oname);
+    }
+
+    @Override
+    public void alterStatus(String Oname, String Ostatus) {
+        ovensDao.alterStatus(Oname, Ostatus);
+    }
+
+    @Override
+    public String findIP(String Oname) {
+        return ovensDao.findIP(Oname);
     }
 }

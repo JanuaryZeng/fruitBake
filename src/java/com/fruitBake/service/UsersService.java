@@ -13,6 +13,14 @@ public interface UsersService {
 
     public void delete(String Uname);
 
-    public Users login(String Uname);
+    public Users login(String Uname, String Upassword);
+
+    public void register(Users users);
+
+    public void alterPassword(@Param("Uname") String Uname,@Param("Upassword") String Upassword);
+
+    public void update(Users users);
+
+    public List<Users> findOne(String Uname);
 
 }

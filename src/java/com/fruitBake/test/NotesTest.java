@@ -21,4 +21,10 @@ public class NotesTest {
         System.out.println(notesService.findOne("4"));
     }
 
+    @Test
+    public void fruitCount(){
+        System.out.println(notesService.fruitCount());
+    }
+
+
 }

@@ -3,25 +3,25 @@ package com.fruitBake.domain;
 import java.io.Serializable;
 
 public class Ovens implements Serializable {
-    Integer id;
     String Oname;
     String Ostatus;
+    String IP;
 
     @Override
     public String toString() {
         return "Ovens{" +
-                "id=" + id +
-                ", Oname='" + Oname + '\'' +
+                "Oname='" + Oname + '\'' +
                 ", Ostatus='" + Ostatus + '\'' +
+                ", IP='" + IP + '\'' +
                 '}';
     }
 
-    public Integer getId() {
-        return id;
+    public String getIP() {
+        return IP;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIP(String IP) {
+        this.IP = IP;
     }
 
     public String getOname() {
@@ -39,4 +39,6 @@ public class Ovens implements Serializable {
     public void setOstatus(String ostatus) {
         Ostatus = ostatus;
     }
+
+
 }

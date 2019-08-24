@@ -25,11 +25,6 @@ public class UsersTest {
     private UsersService usersService;
 
     @Test
-    public void usersSer(){
-        System.out.println(usersDao.login("jan"));
-    }
-
-    @Test
     public void spring(){
         //加载配置文件
         ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
@@ -39,4 +34,22 @@ public class UsersTest {
         as.findAll();
     }
 
+    @Test
+    public void findAll(){
+        System.out.println(usersService.findAll());
+    }
+
+    @Test
+    public void login(){
+        System.out.println(usersDao.login("jan","123"));
+    }
+
+
+    @Test
+    public void update(){
+        Users users = new Users();
+        users.setUname("25");
+        users.setUpassword("6196");
+        usersService.update(users);
+    }
 }

@@ -59,13 +59,14 @@
                         <table class="am-table am-table-striped am-table-hover table-main">
                             <thead>
                             <tr>
-                                <th class="table-id">ID</th><th class="table-title">水果名</th><th class="table-type">开始时间</th><th class="table-author am-hide-sm-only">结束时间</th><th class="table-date am-hide-sm-only">用户名</th><th class="table-set">操作</th>
+                                <th class="table-id">ID</th><th class="table-title">烤箱名</th><th class="table-title">水果名</th><th class="table-type">开始时间</th><th class="table-author am-hide-sm-only">结束时间</th><th class="table-date am-hide-sm-only">用户名</th><th class="table-set">操作</th>
                             </tr>
                             </thead>
                             <tbody>
                             <c:forEach items="${notes}" var="dept" varStatus="status">
                                 <tr>
                                     <td>${dept.noteId}</td>
+                                    <td>${dept.oname}</td>
                                     <td>${dept.fname}</td>
                                     <td>${dept.startTime}</td>
                                     <td>${dept.endTime}</td>

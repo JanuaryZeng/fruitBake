@@ -47,7 +47,24 @@
     <mvc:resources location="/js/" mapping="/js/**" />
     <mvc:resources location="/fonts/" mapping="/fonts/**" />
     <!-- 开启SpringMVC框架注解的支持 -->
-    <mvc:annotation-driven />
+    <!--注解驱动器-->
+    <mvc:annotation-driven>
+        <!--消息转化器-->
+        <mvc:message-converters>
+            <!--配置以下bean，解决json数据传输中中文乱码的问题-->
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=UTF-8</value>
+                        <value>text/html;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+            <!--json数据转换-->
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
 
 </beans>

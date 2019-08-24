@@ -1,28 +1,13 @@
 <%--
   Created by IntelliJ IDEA.
   User: January
-  Date: 2019/8/20
-  Time: 15:34
+  Date: 2019/8/23
+  Time: 21:29
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>后台模板</title>
-    <link rel="stylesheet" href="css/amazeui.css" />
-    <link rel="stylesheet" href="css/core.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/admin.css" />
-    <link rel="stylesheet" href="css/page/typography.css" />
-    <link rel="stylesheet" href="css/page/form.css" />
-    <link rel="stylesheet" href="css/component.css" />
-</head>
-<body>
-<!-- Begin page -->
+
+<jsp:include page="top.jsp"/>
 <header class="am-topbar am-topbar-fixed-top">
     <div class="am-topbar-left am-hide-sm-only">
         <a href="index.jsp" class="logo"><span>水果<span>烘焙坊</span></span><i class="zmdi zmdi-layers"></i></a>
@@ -39,98 +24,138 @@
             <li class="hidden-xs am-hide-sm-only">
                 <form role="search" class="app-search">
                     <input type="text" placeholder="Search..." class="form-control">
-                    <a href=""><img src="img/search.png"></a>
+                    <a href=""><img src="../img/search.png"></a>
                 </form>
             </li>
         </ul>
     </div>
 </header>
-<!-- end page -->
-
-
-<div class="admin">
-    <!--<div class="am-g">-->
-    <!-- ========== Left Sidebar Start ========== -->
-    <!--<div class="left side-menu am-hide-sm-only am-u-md-1 am-padding-0">
-        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 548px;">
-            <div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 548px;">-->
-    <!-- sidebar start -->
-    <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
-        <div class="am-offcanvas-bar admin-offcanvas-bar">
-            <!-- User -->
-            <div class="user-box am-hide-sm-only">
-                <div class="user-img">
-                    <img src="img/avatar-1.jpg" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
-                    <div class="user-status offline"><i class="am-icon-dot-circle-o" aria-hidden="true"></i></div>
+<br/>
+<br/>
+<div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="am-g">
+            <div class="am-u-md-6" >
+                <!-- 折线图堆叠 -->
+                <div class="card-box">
+                    <div  id="pie1" style="width: 100%;height: 400px;"></div>
                 </div>
-                <h5><a href="#">Fruit Bake</a> </h5>
-                <ul class="list-inline">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="text-custom">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
             </div>
-            <!-- End User -->
-
-            <ul class="am-list admin-sidebar-list">
-                <li><a href="index.jsp"><span class="am-icon-home"></span> 首页</a></li>
-
-                <li class="admin-parent">
-                    <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-                        <li><a href="fruits/findAll" class="am-cf"> 水果表单</span></a></li>
-                        <li><a href="fruitTable.jsp" class="am-cf"> 烤箱表单</span></a></li>
-                        <li><a href="fruitTable.jsp" class="am-cf"> 烤制记录</span></a></li>
-                    </ul>
-                </li>
-                <li class="admin-parent">
-                    <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> 用户 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                    <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-                        <li><a href="html/chart_line.html" class="am-cf"> 修改信息</span></a></li>
-                        <li><a href="html/chart_columnar.html" class="am-cf"> 注册</span></a></li>
-                        <li><a href="html/chart_pie.html" class="am-cf"> 退出登录</span></a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-    </div>
-    <!-- sidebar end -->
-
-    <!--</div>
-</div>
-</div>-->
-    <!-- ========== Left Sidebar end ========== -->
-
-
-
-    <!--	<div class="am-g">-->
-    <!-- ============================================================== -->
-    <!-- Start right Content here -->
-    <div class="content-page">
-        <!-- Start content -->
-        <!-- end right Content here -->
-        <!--</div>-->
     </div>
 </div>
 
 <!-- navbar -->
 <a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
 
-<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
-<script type="text/javascript" src="js/amazeui.min.js"></script>
-<script type="text/javascript" src="js/app.js" ></script>
-<script type="text/javascript" src="js/blockUI.js" ></script>
-<script type="text/javascript" src="js/charts/echarts.min.js" ></script>
-<script type="text/javascript" src="js/charts/indexChart.js" ></script>
+<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="../js/amazeui.min.js"></script>
+<script type="text/javascript" src="../js/app.js" ></script>
+<script type="text/javascript" src="../js/blockUI.js" ></script>
+<script type="text/javascript" src="../js/charts/echarts.min.js" ></script>
 
+<script src="../js/jquery-2.1.0.js">
+</script>
+<script>
+
+
+    (function(){
+
+        var pie1 = echarts.init(document.getElementById("pie1"));
+
+        option = {
+            title : {
+                text: '烤制水果数量饼图',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: []
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: false},
+                    magicType : {
+                        show: true,
+                        type: ['pie', 'funnel'],
+                        option: {
+                            funnel: {
+                                x: '25%',
+                                width: '50%',
+                                funnelAlign: 'left',
+                                max: 1548
+                            }
+                        }
+                    },
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            calculable : true,
+            series : [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        pie1.setOption(option);
+
+        $.ajax({
+            type: "get",
+            url: "/fruitBake_war_exploded/notes/fruitCount",
+            // data : {"year":year,"mouth":mouth},
+            cache : false,    //禁用缓存
+            dataType: "json",
+            success: function(result) {
+                var names=[];//定义两个数组
+                var nums=[];
+                console.warn(result['count']);
+
+                $.each(result['count'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
+                    var obj = new Object();
+                    names.push(values['fname'])
+
+                    obj.name = values['fname'];
+                    obj.value = values['num'];
+                    nums.push(obj);
+                });
+                pie1.setOption({ //加载数据图表
+                    legend: {
+                        data: names
+                    },
+                    series: {
+                        // 根据名字对应到相应的系列
+                        name: ['烤制数量'],
+                        data: nums
+                    }
+                });
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("查询失败");
+            }
+        });
+    })();
+</script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@ public class Notes implements Serializable {
 
     private Integer noteId;
 
-    private Integer id;
+    private String Oname;
 
     private String Fname;
 
@@ -16,16 +16,35 @@ public class Notes implements Serializable {
 
     private String Uname;
 
+    private String Nstatus;
+
     @Override
     public String toString() {
         return "Notes{" +
                 "noteId=" + noteId +
-                ", id=" + id +
+                ", Oname='" + Oname + '\'' +
                 ", Fname='" + Fname + '\'' +
                 ", startTime='" + startTime + '\'' +
                 ", endTime='" + endTime + '\'' +
                 ", Uname='" + Uname + '\'' +
+                ", Nstatus='" + Nstatus + '\'' +
                 '}';
+    }
+
+    public String getNstatus() {
+        return Nstatus;
+    }
+
+    public void setNstatus(String nstatus) {
+        Nstatus = nstatus;
+    }
+
+    public String getOname() {
+        return Oname;
+    }
+
+    public void setOname(String oname) {
+        Oname = oname;
     }
 
     public Integer getNoteId() {
@@ -34,14 +53,6 @@ public class Notes implements Serializable {
 
     public void setNoteId(Integer noteId) {
         this.noteId = noteId;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getFname() {

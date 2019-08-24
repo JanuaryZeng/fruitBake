@@ -50,7 +50,7 @@
                 <div class="am-u-sm-12 am-u-md-3">
                     <div class="am-input-group am-input-group-sm">
                         <form action="findOne" >
-                            <input type="text" class="am-form-field" name="id">
+                            <input type="text" class="am-form-field" name="Oname">
                             <span class="am-input-group-btn">
 				            <button type="submit" class="am-btn am-btn-default">搜索</button>
 				            </span>
@@ -67,20 +67,20 @@
                         <table class="am-table am-table-striped am-table-hover table-main">
                             <thead>
                             <tr>
-                                <th class="table-id">ID</th><th class="table-title">烤箱名字</th><th class="table-set">当前状态</th><th class="table-set">操作</th>
+                                <th class="table-title">烤箱名字</th><th class="table-set">当前状态</th><th class="table-set">烤箱地址</th><th class="table-set">操作</th>
                             </tr>
                             </thead>
                             <tbody>
                             <c:forEach items="${ovens}" var="dept" varStatus="status">
                                 <tr>
-                                    <td>${dept.id}</td>
                                     <td>${dept.oname}</td>
                                     <td>${dept.ostatus}</td>
+                                    <td>${dept.IP}</td>
                                     <td>
                                         <div class="am-btn-toolbar">
                                             <div class="am-btn-group am-btn-group-xs">
-                                                <a class="am-btn am-btn-default am-btn-xs am-text-secondary" href="to_update?id=${dept.id}"><span class="am-icon-pencil-square-o"></span> 编辑</a>
-                                                <a class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" href="delete?id=${dept.id}"><span class="am-icon-trash-o"></span>删除</a>
+                                                <a class="am-btn am-btn-default am-btn-xs am-text-secondary" href="to_update?Oname=${dept.oname}"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                                                <a class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" href="delete?Oname=${dept.oname}"><span class="am-icon-trash-o"></span>删除</a>
                                             </div>
                                         </div>
                                     </td>

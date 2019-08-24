@@ -14,7 +14,7 @@ public class Logs implements Serializable {
 
     private String Ltime;
 
-    private String Level;
+    private String Lev;
 
     @Override
     public String toString() {
@@ -24,7 +24,7 @@ public class Logs implements Serializable {
                 ", temp=" + temp +
                 ", humi=" + humi +
                 ", Ltime='" + Ltime + '\'' +
-                ", Level='" + Level + '\'' +
+                ", Lev='" + Lev + '\'' +
                 '}';
     }
 
@@ -68,11 +68,11 @@ public class Logs implements Serializable {
         Ltime = ltime;
     }
 
-    public String getLevel() {
-        return Level;
+    public String getLev() {
+        return Lev;
     }
 
-    public void setLevel(String level) {
-        Level = level;
+    public void setLev(String lev) {
+        Lev = lev;
     }
 }

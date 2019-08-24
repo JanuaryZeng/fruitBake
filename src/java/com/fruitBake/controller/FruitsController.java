@@ -1,10 +1,12 @@
 package com.fruitBake.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.fruitBake.domain.Fruits;
 import com.fruitBake.service.FruitsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +54,7 @@ public class FruitsController {
         return "redirect:findAll";
     }
 
-    @RequestMapping(value = "to_update",params = "Fname")
+    @RequestMapping(value = "to_update")
     public String toUpdate(String Fname, Map<String,Object> map){
         map.put("toUpdate",fruitsService.findOne(Fname).get(0));
         return "fruitUpdate";
@@ -64,6 +66,17 @@ public class FruitsController {
         return "redirect:findAll";
     }
 
+    @ResponseBody
+    @RequestMapping("/SelectOne")
+    public String SelectOne(String fname){
+        Fruits fruits = fruitsService.findOne(fname).get(0);
+        if (fruits == null)
+            return "";
+        JSONObject json = new JSONObject();
+        json.put("SelectOne",JSONObject.toJSON(fruits));
 
+        //return json
+        return json.toJSONString();
+    }
 
 }

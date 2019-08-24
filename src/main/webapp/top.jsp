@@ -77,9 +77,8 @@
                 <li class="admin-parent">
                     <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><i class="am-icon-line-chart" aria-hidden="true"></i> 用户 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                     <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
-                        <li><a href="html/chart_line.html" class="am-cf"> 修改信息</a></li>
-                        <li><a href="html/chart_columnar.html" class="am-cf"> 注册</a></li>
-                        <li><a href="html/chart_pie.html" class="am-cf"> 退出登录</a></li>
+                        <li><a href="/fruitBake_war_exploded/users/findAll" class="am-cf"> 用户表单</a></li>
+                        <li><a href="/fruitBake_war_exploded/users/to_add" class="am-cf"> 增加用户</a></li>
                     </ul>
                 </li>
             </ul>
