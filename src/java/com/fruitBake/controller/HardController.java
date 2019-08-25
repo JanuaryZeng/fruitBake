@@ -80,8 +80,15 @@ public class HardController {
     }
 
     @RequestMapping("/home")
-    public String goHome(){
+    public String home(Map<String, Object> map){
+        map.put("work",notesService.currentWork());
         return "home";
+    }
+
+    @RequestMapping("/lineChart")
+    public String lineChart(String noteId,Map<String,Object> map){
+        map.put("noteId",noteId);
+        return "LineChart";
     }
 
 }

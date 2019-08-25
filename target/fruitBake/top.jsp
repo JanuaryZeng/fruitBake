@@ -14,7 +14,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>后台模板</title>
+    <title>水果烘焙坊</title>
 
     <link rel="stylesheet" href="../css/amazeui.css" />
     <link rel="stylesheet" href="../css/core.css" />
@@ -38,6 +38,7 @@
         <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 548px;">
             <div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 548px;">-->
     <!-- sidebar start -->
+<%--    am-offcanvas 滑动导航--%>
     <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
         <div class="am-offcanvas-bar admin-offcanvas-bar">
             <!-- User -->
@@ -64,7 +65,7 @@
             <!-- End User -->
 
             <ul class="am-list admin-sidebar-list">
-                <li><a href="../index.jsp"><span class="am-icon-home"></span> 首页</a></li>
+                <li><a href="/fruitBake_war_exploded/hardware/home"><span class="am-icon-home"></span> 首页</a></li>
 
                 <li class="admin-parent">
                     <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class="am-icon-table"></span> 数据 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>

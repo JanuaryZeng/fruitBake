@@ -73,10 +73,24 @@ public class FruitsController {
         if (fruits == null)
             return "";
         JSONObject json = new JSONObject();
-        json.put("SelectOne",JSONObject.toJSON(fruits));
+        json.put("1",JSONObject.toJSON(fruits));
 
         //return json
         return json.toJSONString();
     }
 
+    @ResponseBody
+    @RequestMapping("/SelectAll")
+    public String SelectAll(){
+        List<Fruits> list = fruitsService.findAll();
+        JSONObject json = new JSONObject();
+        int i = 1;
+
+        for(Fruits fruits : list){
+            json.put(String.valueOf(i),fruits);
+            i++;
+        }
+        //return json
+        return json.toJSONString();
+    }
 }

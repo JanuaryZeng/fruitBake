@@ -75,7 +75,7 @@ public class UsersController {
         if (users == null)
             return "";
         JSONObject json = new JSONObject();
-        json.put("login",JSONObject.toJSON(users));
+        json.put("1",JSONObject.toJSON(users));
 
         //return json
         return json.toJSONString();
@@ -94,7 +94,7 @@ public class UsersController {
         usersService.register(users);
 
         JSONObject json = new JSONObject();
-        json.put("register",users);
+        json.put("1",users);
         //return json
         return json.toJSONString();
 
@@ -106,12 +106,15 @@ public class UsersController {
 
         usersService.alterPassword(id, upassword);
 
-        JSONObject json = new JSONObject();
-        json.put("alterPassword","alterPassword");
-
-        return json.toJSONString();
+        return "yes";
 
     }
 
+    @ResponseBody
+    @RequestMapping("/alterOters")
+    public String alterOters(String Ucontext, String phone, String Uicon,String Uname){
+        usersService.userUpdate(Ucontext,phone,Uicon,Uname);
+        return "yes";
+    }
 
 }

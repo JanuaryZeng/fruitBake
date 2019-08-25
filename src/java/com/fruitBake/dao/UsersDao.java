@@ -37,4 +37,10 @@ public interface UsersDao {
     @Select("select * from Users where Uname = #{Uname}")
     public List<Users> findOne(String Uname);
 
+    @Update("update Users set Ucontext = #{Ucontext}, phone = #{phone},Uicon = #{Uicon} where Uname = #{Uname}")
+    public void userUpdate(@Param("Ucontext") String Ucontext,
+                           @Param("phone") String phone,
+                           @Param("Uicon") String Uicon,
+                           @Param("Uname") String Uname);
+
 }

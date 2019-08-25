@@ -27,4 +27,9 @@ public class LogsTest {
         logs.setLev("213");
         logsService.insert(logs);
     }
+    @Test
+    public void findByNote(){
+        System.out.println(logsService.findByNote("1"));
+    }
 }
+

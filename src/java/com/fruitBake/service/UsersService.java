@@ -23,4 +23,8 @@ public interface UsersService {
 
     public List<Users> findOne(String Uname);
 
+    public void userUpdate(@Param("Ucontext") String Ucontext,
+                           @Param("phone") String phone,
+                           @Param("Uicon") String Uicon,
+                           @Param("Uname") String Uname);
 }

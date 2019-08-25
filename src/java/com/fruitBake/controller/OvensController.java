@@ -73,7 +73,7 @@ public class OvensController {
         ovensService.alterStatus(ovenname,statue);
 
         JSONObject json = new JSONObject();
-        json.put("alterStatus","alterStatus");
+        json.put("1","alterStatus");
 
         return json.toJSONString();
     }

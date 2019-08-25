@@ -5,7 +5,8 @@
   Time: 21:29
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <jsp:include page="top.jsp"/>
 <header class="am-topbar am-topbar-fixed-top">
@@ -32,18 +33,41 @@
 </header>
 <br/>
 <br/>
+
 <div class="content-page">
     <!-- Start content -->
     <div class="content">
         <div class="am-g">
-            <div class="am-u-md-6" >
+            <div class="am-u-md-7" >
                 <!-- 折线图堆叠 -->
                 <div class="card-box">
                     <div  id="pie1" style="width: 100%;height: 400px;"></div>
                 </div>
             </div>
+            <div class="am-u-md-4">
+                <div class="card-box">
+                    <h4 class="header-title m-t-0 m-b-30">正在烤制</h4>
+                    <div class="inbox-widget nicescroll" style="height: 315px; overflow: hidden; outline: none;" tabindex="5000">
+                        <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
+
+                        <c:forEach items="${work}" var="dept" varStatus="status">
+                        <a href="lineChart?noteId=${dept.noteId}">
+                            <div class="inbox-item">
+                                <div class="inbox-item-img"><img src="../img/avatar-1.jpg" class="img-circle" alt=""></div>
+                                <p class="inbox-item-author">${dept.oname}</p>
+                                <p class="inbox-item-text">用户名${dept.uname}</p>
+                                <p class="inbox-item-date">开始时间${dept.startTime}</p>
+                            </div>
+                        </a>
+                        </c:forEach>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
+
 </div>
 
 <!-- navbar -->
@@ -53,8 +77,7 @@
 <script type="text/javascript" src="../js/amazeui.min.js"></script>
 <script type="text/javascript" src="../js/app.js" ></script>
 <script type="text/javascript" src="../js/blockUI.js" ></script>
-<script type="text/javascript" src="../js/charts/echarts.min.js" ></script>
-
+<script type="text/javascript" src="../js/charts/echarts.min.js" />
 <script src="../js/jquery-2.1.0.js">
 </script>
 <script>
@@ -66,7 +89,7 @@
 
         option = {
             title : {
-                text: '烤制水果数量饼图',
+                text: '烤制水果次数饼图',
                 x:'center'
             },
             tooltip : {

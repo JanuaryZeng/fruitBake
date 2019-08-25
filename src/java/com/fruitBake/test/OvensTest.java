@@ -42,7 +42,7 @@ public class OvensTest {
 
         ovens.setOname("asdasd");
         ovens.setOstatus("1");
-        ovensService.update(ovens);
+        ovensService.alterStatus("美的01","0");
     }
 
     @Test

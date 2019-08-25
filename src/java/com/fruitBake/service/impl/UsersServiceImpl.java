@@ -54,5 +54,10 @@ public class UsersServiceImpl implements UsersService {
         return usersDao.findOne(Uname);
     }
 
+    @Override
+    public void userUpdate(String Ucontext, String phone, String Uicon,String Uname) {
+        usersDao.userUpdate(Ucontext,phone,Uicon,Uname);
+    }
+
 
 }

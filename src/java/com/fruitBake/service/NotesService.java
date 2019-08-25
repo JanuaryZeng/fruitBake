@@ -29,4 +29,6 @@ public interface NotesService {
 
     public List<FruitCount> fruitCount();
 
+    public List<Notes> currentWork();
+
 }

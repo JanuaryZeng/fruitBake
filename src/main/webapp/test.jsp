@@ -34,6 +34,16 @@
 <div class="content-page">
     <!-- Start content -->
     <div class="content">
+
+        <div class="am-g">
+            <div class="am-u-md-12">
+                <!-- 动态数据+时间坐标轴 -->
+                <div class="card-box">
+                    <div  id="trends" style="width: 100%;height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="am-g">
             <div class="am-u-md-6" >
                 <!-- 折线图堆叠 -->
@@ -119,14 +129,14 @@
 
         $.ajax({
             type: "get",
-            url: "../notes/fruitCount",
+            url: "notes/fruitCount",
             // data : {"year":year,"mouth":mouth},
             cache : false,    //禁用缓存
             dataType: "json",
             success: function(result) {
                 var names=[];//定义两个数组
                 var nums=[];
-                console.warn(result['count']);
+                // console.warn(result['count']);
 
                 $.each(result['count'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
                     var obj = new Object();
@@ -152,6 +162,128 @@
             }
         });
     })();
+</script>
+
+<script>
+
+    //动态数据+时间坐标轴
+    (function(){
+
+        var trends = echarts.init(document.getElementById("trends"));
+
+        function randomData() {
+            now = new Date(+now + oneDay);
+            value = value + Math.random() * 21 - 10;
+            return {
+                name: now.toString(),
+                value: [
+                    [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+                    Math.round(value)
+                ]
+            }
+        }
+
+        function createData(num,time) {
+                Ltime = new Date(time.toString());
+            return{
+                name: Ltime.toString(),
+                value: [
+                    Ltime.toString(),
+                    num
+                ]
+            }
+        }
+
+        var data = [];
+        var now = +new Date(1997, 9, 3);
+        var oneDay = 24 * 3600 * 1000;
+        var value = Math.random() * 1000;
+        for (var i = 0; i < 1000; i++) {
+            data.push(randomData());
+        }
+
+        option = {
+            title: {
+                text: '动态数据 + 时间坐标轴'
+            },
+            tooltip: {
+                trigger: 'axis',
+                formatter: function (params) {
+                    params = params[0];
+                    var date = new Date(params.name);
+                    return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' '
+                        + date.getHours() + ":" + date.getMinutes() + ":"
+                        + date.getSeconds() + " | " + params.value[1];
+                },
+                axisPointer: {
+                    animation: false
+                }
+            },
+            xAxis: {
+                type: 'time',
+                splitLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'value',
+                boundaryGap: [0, '100%'],
+                splitLine: {
+                    show: false
+                }
+            },
+            series: [{
+                name: '模拟数据',
+                type: 'line',
+                showSymbol: false,
+                hoverAnimation: false,
+                data: []
+            }]
+        };
+        trends.setOption(option);
+
+        $.ajax({
+            type: "post",
+            url: "logs/findByNoteId",
+            data : {"noteId":"2"},
+            cache : false,    //禁用缓存
+            dataType: "json",
+            success: function(result) {
+                var datas=[];//定义两个数组
+                console.warn(result['findByNoteId']);
+
+                $.each(result['findByNoteId'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
+                    datas.push(createData(values['humi'],values['ltime']))
+                });
+                console.warn(datas);
+
+                trends.setOption({ //加载数据图表
+                    series: {
+                        data: datas
+                    }
+                });
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("查询失败");
+            }
+        });
+        //
+        // timeTicket = setInterval(function () {
+        //
+        //     for (var i = 0; i < 5; i++) {
+        //         data.shift();
+        //         data.push(randomData());
+        //     }
+        //
+        //     trends.setOption({
+        //         series: [{
+        //             data: data
+        //         }]
+        //     });
+        // }, 1000);
+
+    })();
+
 </script>
 </body>
 

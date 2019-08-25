@@ -24,7 +24,7 @@ public interface FruitsDao {
     @Insert("insert into fruits values(#{Fname},#{mean},#{Ficon})")
     public void insert(Fruits fruits);
 
-    @Update("update fruits set mean = #{mean} Ficon = #{Ficon} where Fname = #{Fname}")
+    @Update("update fruits set mean = #{mean}, Ficon = #{Ficon} where Fname = #{Fname}")
     public void update(Fruits fruits);
 
     @Select("select mean from fruits where Fname = #{Fname}")

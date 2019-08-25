@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.fruitBake.domain.FruitCount;
 import com.fruitBake.domain.Notes;
 import com.fruitBake.service.NotesService;
+import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -70,7 +71,12 @@ public class NotesController {
         List<Notes> list = notesService.byOname(oname);
 
         JSONObject json = new JSONObject();
-        json.put("byOname",JSONObject.toJSON(list));
+
+        int i = 1;
+        for(Notes  notes: list){
+            json.put(String.valueOf(i),notes);
+            i++;
+        }
 
         //return json
         return json.toJSONString();
@@ -83,7 +89,11 @@ public class NotesController {
         List<Notes> list = notesService.byUname(uname);
 
         JSONObject json = new JSONObject();
-        json.put("byUname",JSONObject.toJSON(list));
+        int i = 1;
+        for (Notes notes : list){
+            json.put(String.valueOf(i),notes);
+            i++;
+        }
 
         //return json
         return json.toJSONString();
@@ -97,7 +107,7 @@ public class NotesController {
         notesService.alterEndTime(noteId, endTime);
 
         JSONObject json = new JSONObject();
-        json.put("alterEndTime","alterEndTime");
+        json.put("1","alterEndTime");
 
         //return json
         return json.toJSONString();

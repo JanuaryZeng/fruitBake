@@ -66,5 +66,10 @@ public class NotesServiceImpl implements NotesService {
         return notesDao.fruitCount();
     }
 
+    @Override
+    public List<Notes> currentWork() {
+        return notesDao.currentWork();
+    }
+
 
 }

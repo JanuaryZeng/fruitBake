@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=/fruitBake_war_exploded//hardware/home">
+    <meta http-equiv="refresh" content="0;url=/fruitBake_war_exploded/hardware/home">
 </head>
 <body>
 </body>

@@ -67,5 +67,14 @@ public class FruitsTest {
         fruits.setMean("1564");
         fruitsService.insert(fruits);
     }
+    @Test
+    public void SerUpdate(){
+        Fruits fruits = new Fruits();
+        fruits.setFname("芒果");
+        fruits.setMean("20:200%15:100");
+        fruits.setFicon("1564");
+
+        fruitsService.update(fruits);
+    }
 
 }

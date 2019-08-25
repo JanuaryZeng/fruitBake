@@ -26,5 +26,9 @@ public class NotesTest {
         System.out.println(notesService.fruitCount());
     }
 
+    @Test
+    public void currentWork(){
+        System.out.println(notesService.currentWork());
+    }
 
 }

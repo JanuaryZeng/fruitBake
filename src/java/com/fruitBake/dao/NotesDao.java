@@ -44,4 +44,6 @@ public interface NotesDao {
     @Select("select Fname,count(Fname) num from notes group by Fname")
     public List<FruitCount> fruitCount();
 
+    @Select("select * from notes where endTime > (select current_timestamp());")
+    public List<Notes> currentWork();
 }

@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="am-u-sm-12 am-u-md-3">
-                    <div class="am-input-group am-input-group-sm">
+                    <div class="am-g am-input-group am-input-group-sm">
                         <form action="findOne" >
                             <input type="text" class="am-form-field" name="Oname">
                             <span class="am-input-group-btn">

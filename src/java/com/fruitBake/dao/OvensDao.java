@@ -25,7 +25,7 @@ public interface OvensDao {
     @Select("select * from ovens where Oname = #{Oname}")
     public List<Ovens> findOne(String Oname);
 
-    @Update("update ovens set Ostatus = #{Ostatus} where where Oname = #{Oname}")
+    @Update("update ovens set Ostatus = #{Ostatus} where Oname = #{Oname}")
     public void alterStatus(@Param("Oname") String Oname,@Param("Ostatus") String Ostatus);
 
 
