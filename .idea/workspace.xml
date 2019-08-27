@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6abd5b7-23cd-49df-8ff6-d69b2b03ea5b" name="Default Changelist" comment="水果表单增加与全查">
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,72 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/dao/NotesDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/service/NotesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/service/impl/NotesServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/../../Resource/Adminto/html/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="602">
-              <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1664#1665#0" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1839#1840#0" expanded="true" />
-                <element signature="e#1899#1900#0" expanded="true" />
-                <element signature="e#1943#1944#0" expanded="true" />
-                <element signature="e#1996#1997#0" expanded="true" />
-                <element signature="e#2023#2024#0" expanded="true" />
-              </folding>
+              <caret line="57" selection-start-line="1" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/NotesController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="316">
+              <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,7 +108,6 @@
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/domain/FruitCount.java" />
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/domain/Admin.java" />
         <option value="$PROJECT_DIR$/../../Resource/Adminto/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/top.jsp" />
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/test/LogsTest.java" />
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/test/FruitsTest.java" />
@@ -196,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/service/NotesService.java" />
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/service/impl/NotesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -227,9 +178,9 @@
     <option name="vmOptions" value="-Dfile.encoding=UTF-8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-82" />
-    <option name="y" value="277" />
-    <option name="width" value="1819" />
+    <option name="x" value="-83" />
+    <option name="y" value="276" />
+    <option name="width" value="1820" />
     <option name="height" value="1095" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -238,8 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,6 +302,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,9 +499,9 @@
       <item itemvalue="JUnit.LogsTest.findByNote" />
       <item itemvalue="JUnit.FruitsTest.SerUpdate" />
       <item itemvalue="JUnit.OvensTest.update" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
       <item itemvalue="JUnit.NotesTest.fruitCount" />
       <item itemvalue="JUnit.UsersTest.alterOthers" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.94" />
     </list>
     <recent_temporary>
       <list>
@@ -579,7 +530,8 @@
       <workItem from="1566547968032" duration="14637000" />
       <workItem from="1566629148651" duration="22458000" />
       <workItem from="1566699168608" duration="22559000" />
-      <workItem from="1566887461901" duration="13253000" />
+      <workItem from="1566887461901" duration="13578000" />
+      <workItem from="1566903984872" duration="225000" />
     </task>
     <task id="LOCAL-00001" summary="Adminto">
       <created>1566288171649</created>
@@ -631,7 +583,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143107000" />
+    <option name="totallyTimeSpent" value="143683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,8 +596,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.24329759" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" weight="0.24664879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -655,7 +608,7 @@
       <window_info id="Web" order="7" sideWeight="0.50141644" side_tool="true" weight="0.3150134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4966488" visible="true" weight="0.35977337" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" weight="0.35977337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47450426" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -731,7 +684,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/domain/Admin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/sb-admin-2.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -927,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="83" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ovenAdd.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1115,20 +1060,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/NotesController.java">
+    <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1998">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/dao/NotesDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-end-line="48" />
+        <state relative-caret-position="1107">
+          <caret line="47" column="36" selection-start-line="47" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1137,7 +1079,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/service/NotesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
+        <state relative-caret-position="945">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1147,7 +1089,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/service/impl/NotesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
+        <state relative-caret-position="1431">
           <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1164,15 +1106,35 @@
             <element signature="e#1899#1900#0" expanded="true" />
             <element signature="e#1943#1944#0" expanded="true" />
             <element signature="e#1996#1997#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
+            <element signature="e#2040#2041#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java">
+    <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/NotesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+        <state relative-caret-position="2754">
+          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Resource/Adminto/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="57" selection-start-line="1" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
