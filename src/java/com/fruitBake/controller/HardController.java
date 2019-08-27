@@ -77,7 +77,7 @@ public class HardController {
             i++;
         }
 
-        List<Notes> list1 = notesService.findByStatus();
+        List<Notes> list1 = notesService.findByTime();
         for(Notes notes : list1){
             String MAC = ovensService.findIP(notes.getOname());
             String mean = fruitsService.findMean(notes.getFname());

@@ -7,32 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6abd5b7-23cd-49df-8ff6-d69b2b03ea5b" name="Default Changelist" comment="水果表单增加与全查">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/axis.log" beforeDir="false" afterPath="$PROJECT_DIR$/axis.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/controller/NotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/controller/NotesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/dao/LogsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/dao/LogsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/dao/NotesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/dao/NotesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/domain/HardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/domain/HardData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/service/LogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/service/LogsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/service/NotesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/service/NotesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/service/impl/LogsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/service/impl/LogsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/service/impl/NotesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/service/impl/NotesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/test/NotesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/test/NotesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/fruitBake/test/UsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/fruitBake/test/UsersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LineChart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LineChart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fruitAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fruitAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fruitTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fruitTable.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fruitUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fruitUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/noteTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/noteTable.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ovenAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ovenAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ovenTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ovenTable.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ovenUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ovenUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userTable.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/userUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/userUpdate.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+            <state relative-caret-position="134">
+              <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -604,7 +579,7 @@
       <workItem from="1566547968032" duration="14637000" />
       <workItem from="1566629148651" duration="22458000" />
       <workItem from="1566699168608" duration="22559000" />
-      <workItem from="1566887461901" duration="11559000" />
+      <workItem from="1566887461901" duration="13253000" />
     </task>
     <task id="LOCAL-00001" summary="Adminto">
       <created>1566288171649</created>
@@ -656,7 +631,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141413000" />
+    <option name="totallyTimeSpent" value="143107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,9 +644,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.24329759" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.24329759" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -681,7 +655,7 @@
       <window_info id="Web" order="7" sideWeight="0.50141644" side_tool="true" weight="0.3150134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4966488" weight="0.35977337" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4966488" visible="true" weight="0.35977337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47450426" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1197,8 +1171,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/fruitBake/controller/HardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        <state relative-caret-position="134">
+          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
         </state>
       </provider>
     </entry>
