@@ -22,8 +22,14 @@ public interface NotesDao {
 
     @Insert("insert into notes " +
             "(Oname, Fname, startTime, endTime, Uname) " +
-            "values (#{Oname}, #{Fname}, #{startTime}, #{endTime}, #{Uname});\n")
+            "values (#{Oname}, #{Fname}, #{startTime}, #{endTime}, #{Uname});")
     public void insert(Notes notes);
+
+    @Select("select * from notes where Uname = #{Uname}")
+    public List<Notes> findOneByUname(String Uname);
+
+    @Select("select * from notes where Oname = #{Oname}")
+    public List<Notes> findOneByOname(String Oname);
 
     @Select("select * from notes where Oname = #{Oname}")
     public List<Notes> byOname(String Oname);
@@ -32,14 +38,20 @@ public interface NotesDao {
     @Select("select * from notes where Uname = #{Uname}")
     public List<Notes> byUname(String Uname);
 
-    @Update("update notes set endTime = #{endTime} where where noteid = #{noteid}")
+    @Update("update notes set endTime = #{endTime} where noteId = #{noteid}")
     public void alterEndTime(@Param("noteid") String noteid, @Param("endTime") String endTime);
 
-    @Select("select * from notes where Nstatus = 1")
+    @Select("select * from notes where Nstatus = 1 and endTime > (select current_timestamp());")
     public List<Notes> findByStatus();
+
+    @Select("select * from notes where Nstatus = 1 and endTime <= (select current_timestamp());")
+    public List<Notes> findByTime();
 
     @Update("update notes set Nstatus = 0 where Nstatus = 1")
     public void updateStatus();
+
+    @Update("update notes set Nstatus = 1 where noteId = #{noteId}")
+    public void alterStatus(String noteId);
 
     @Select("select Fname,count(Fname) num from notes group by Fname")
     public List<FruitCount> fruitCount();

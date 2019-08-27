@@ -245,19 +245,21 @@
         $.ajax({
             type: "post",
             url: "logs/findByNoteId",
-            data : {"noteId":"2"},
+            data : {"noteId":"56"},
             cache : false,    //禁用缓存
             dataType: "json",
             success: function(result) {
                 var datas=[];//定义两个数组
-                console.warn(result['findByNoteId']);
-
                 $.each(result['findByNoteId'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
                     datas.push(createData(values['humi'],values['ltime']))
+                    noteid = values['noteId']
                 });
                 console.warn(datas);
 
                 trends.setOption({ //加载数据图表
+                    title:{
+                        text: "记录ID为："+noteid+" 的湿度数据变化情况"
+                    },
                     series: {
                         data: datas
                     }
@@ -267,20 +269,35 @@
                 alert("查询失败");
             }
         });
-        //
-        // timeTicket = setInterval(function () {
-        //
-        //     for (var i = 0; i < 5; i++) {
-        //         data.shift();
-        //         data.push(randomData());
-        //     }
-        //
-        //     trends.setOption({
-        //         series: [{
-        //             data: data
-        //         }]
-        //     });
-        // }, 1000);
+
+        timeTicket = setInterval(function () {
+
+            $.ajax({
+                type: "post",
+                url: "logs/findByNoteId",
+                data : {"noteId":"56"},
+                cache : false,    //禁用缓存
+                dataType: "json",
+                success: function(result) {
+                    var datas=[];//定义两个数组
+                    console.warn(result['findByNoteId']);
+
+                    $.each(result['findByNoteId'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
+                        datas.push(createData(values['humi'],values['ltime']))
+                    });
+                    console.warn(datas);
+
+                    trends.setOption({ //加载数据图表
+                        series: {
+                            data: datas
+                        }
+                    });
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    alert("查询失败");
+                }
+            });
+        }, 1000);
 
     })();
 

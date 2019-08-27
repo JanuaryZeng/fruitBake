@@ -31,4 +31,12 @@ public interface NotesService {
 
     public List<Notes> currentWork();
 
+    public List<Notes> findOneByOname(String Oname);
+
+    public List<Notes> findOneByUname(String Uname);
+
+    public void alterStatus(String noteId);
+
+    public List<Notes> findByTime();
+
 }

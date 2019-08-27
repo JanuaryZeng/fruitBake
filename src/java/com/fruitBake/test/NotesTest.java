@@ -23,7 +23,8 @@ public class NotesTest {
 
     @Test
     public void fruitCount(){
-        System.out.println(notesService.fruitCount());
+//        System.out.println(notesService.fruitCount());
+        notesService.alterEndTime("58", "2019-08-27 17:14:49");
     }
 
     @Test

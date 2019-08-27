@@ -68,6 +68,7 @@ public class HardController {
             String mean = fruitsService.findMean(notes.getFname());
             HardData hardData = new HardData(MAC, mean);
 
+            hardData.setFlag("0");
             hardData.setEndTime(notes.getEndTime());
             hardData.setStartTime(notes.getStartTime());
             hardData.setNoteId(notes.getNoteId());
@@ -75,13 +76,29 @@ public class HardController {
             json.put(String.valueOf(i),JSONObject.toJSON(hardData));
             i++;
         }
-//        notesService.updateStatus();
+
+        List<Notes> list1 = notesService.findByStatus();
+        for(Notes notes : list1){
+            String MAC = ovensService.findIP(notes.getOname());
+            String mean = fruitsService.findMean(notes.getFname());
+            HardData hardData = new HardData(MAC, mean);
+
+            hardData.setFlag("1");
+            hardData.setEndTime(notes.getEndTime());
+            hardData.setStartTime(notes.getStartTime());
+            hardData.setNoteId(notes.getNoteId());
+
+            json.put(String.valueOf(i),JSONObject.toJSON(hardData));
+            i++;
+        }
+        notesService.updateStatus();
         return json.toJSONString();
     }
 
     @RequestMapping("/home")
     public String home(Map<String, Object> map){
         map.put("work",notesService.currentWork());
+        map.put("notes",notesService.findAll());
         return "home";
     }
 
@@ -89,6 +106,33 @@ public class HardController {
     public String lineChart(String noteId,Map<String,Object> map){
         map.put("noteId",noteId);
         return "LineChart";
+    }
+
+    @RequestMapping("/findOne")
+    public String findOne(String NoteId, Map<String, Object> map){
+        map.put("work",notesService.currentWork());
+
+        if(NoteId.equals(""))
+            map.put("notes",notesService.findAll());
+        else{
+            List<Notes> list = notesService.findOne(NoteId);
+
+            List<Notes> list1 = notesService.findOneByOname(NoteId);
+
+            for(Notes notes : list1){
+                list.add(notes);
+            }
+
+            List<Notes> list2 = notesService.findOneByUname(NoteId);
+
+            for(Notes notes : list2){
+                list.add(notes);
+            }
+
+            map.put("notes",list);
+        }
+
+        return "home";
     }
 
 }

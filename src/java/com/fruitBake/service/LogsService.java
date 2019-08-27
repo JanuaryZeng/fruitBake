@@ -10,4 +10,6 @@ public interface LogsService {
 
     public List<Logs> findByNote(String noteId);
 
+    public void delByNoteId(String noteId);
+
 }

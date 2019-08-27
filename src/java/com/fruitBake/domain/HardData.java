@@ -12,12 +12,22 @@ public class HardData {
 
     private String endTime;
 
+    private String flag;
+
     public HardData() {
     }
 
     public HardData(String MAC, String mean) {
         this.MAC = MAC;
         this.mean = mean;
+    }
+
+    public String getFlag() {
+        return flag;
+    }
+
+    public void setFlag(String flag) {
+        this.flag = flag;
     }
 
     public String getMAC() {

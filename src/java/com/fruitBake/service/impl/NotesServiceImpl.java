@@ -71,5 +71,25 @@ public class NotesServiceImpl implements NotesService {
         return notesDao.currentWork();
     }
 
+    @Override
+    public List<Notes> findOneByOname(String Oname) {
+        return notesDao.findOneByOname(Oname);
+    }
+
+    @Override
+    public List<Notes> findOneByUname(String Uname) {
+        return notesDao.findOneByUname(Uname);
+    }
+
+    @Override
+    public void alterStatus(String noteId) {
+        notesDao.alterStatus(noteId);
+    }
+
+    @Override
+    public List<Notes> findByTime() {
+        return notesDao.findByTime();
+    }
+
 
 }

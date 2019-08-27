@@ -3,6 +3,7 @@ package com.fruitBake.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.fruitBake.domain.FruitCount;
 import com.fruitBake.domain.Notes;
+import com.fruitBake.service.LogsService;
 import com.fruitBake.service.NotesService;
 import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,9 @@ public class NotesController {
 
     @Autowired
     private NotesService notesService;
+
+    @Autowired
+    private LogsService logsService;
 
 
     @RequestMapping("/findAll")
@@ -40,7 +44,9 @@ public class NotesController {
 
     @RequestMapping("delete")
     public String delete(String NoteId){
+        logsService.delByNoteId(NoteId);
         notesService.delete(NoteId);
+
         return "redirect:findAll";
     }
 
@@ -106,7 +112,10 @@ public class NotesController {
 
         notesService.alterEndTime(noteId, endTime);
 
+        notesService.alterStatus(noteId);
+
         JSONObject json = new JSONObject();
+
         json.put("1","alterEndTime");
 
         //return json

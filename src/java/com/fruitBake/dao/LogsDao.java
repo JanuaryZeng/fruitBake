@@ -1,6 +1,7 @@
 package com.fruitBake.dao;
 
 import com.fruitBake.domain.Logs;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -15,4 +16,7 @@ public interface LogsDao {
 
     @Select("select * from logs where noteid = #{noteId}")
     public List<Logs> findByNote(String noteId);
+
+    @Delete("delete from logs where noteId = #{noteId}")
+    public void delByNoteId(String noteId);
 }

@@ -23,4 +23,9 @@ public class LogsServiceImpl implements LogsService {
     public List<Logs> findByNote(String noteId) {
         return logsDao.findByNote(noteId);
     }
+
+    @Override
+    public void delByNoteId(String noteId) {
+        logsDao.delByNoteId(noteId);
+    }
 }

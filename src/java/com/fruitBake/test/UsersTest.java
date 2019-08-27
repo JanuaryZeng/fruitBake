@@ -52,4 +52,8 @@ public class UsersTest {
         users.setUpassword("6196");
         usersService.update(users);
     }
+    @Test
+    public void alterOthers(){
+        usersService.userUpdate("123","123","123","25");
+    }
 }
