@@ -130,6 +130,7 @@
                 $.each(result['findByNoteId'],function(key,values){ //此处我返回的是list<String,map<String,String>>循环map
                     datas.push(createData(values['humi'],values['ltime']))
                 });
+
                 trends.setOption({ //加载数据图表
                     title:{
                         text: "记录ID为："+noteid+" 的湿度数据变化情况"

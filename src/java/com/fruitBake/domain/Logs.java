@@ -2,7 +2,7 @@ package com.fruitBake.domain;
 
 import java.io.Serializable;
 
-public class Logs implements Serializable {
+    public class Logs implements Serializable {
 
     private Integer id;
 
